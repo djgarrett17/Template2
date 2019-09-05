@@ -1,0 +1,549 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  
+}
+.pagecontainer{
+    background: rgb(164, 189, 214);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto auto auto auto;
+    grid-template-areas: 
+
+    "i i a a h h"
+    "j j a a h h"
+    "c b b b b d"
+    "c b b b b d"
+    "f b b b b d"
+    "f b b b b d";
+
+      
+}
+
+.hometitle{
+    grid-area: a;
+    justify-self: center;
+    align-self: end;
+    font-size: 26px;
+    color: whitesmoke;
+    margin: 50px 0 0 0;
+    /* font-family: 'Bad Script', cursive; */
+}
+
+.navgrid{
+    grid-area: i;
+    justify-self: center;
+    align-self: start;
+    margin: 20px 0 0 0;
+}
+
+/* .shop{
+    color: aqua;
+    text-decoration: none;
+} */
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: transparent}
+
+  /* change background to darker shade on hover */
+  /* .dropdown:hover .pagecontainer {background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/homebackimage.jpg");} */
+
+.topnav{
+    grid-area: h;
+    align-self: start;
+}
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 20px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+.checkout{
+    transform: translate(70%, 300%)
+}
+
+.gallery {
+    grid-area: b;
+    background: whitesmoke;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 50%;
+    
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a b c"
+    "d e f"
+    "g h i"; */
+    overflow: scroll;
+    /* text-align: justify; */
+
+  }
+
+  
+  
+  .image1{
+    position: relative;
+    
+  }
+  .image2{
+    position: relative;
+
+  }
+  .image3{
+    position: relative;
+
+  }
+  .image4{
+    position: relative;
+
+  }
+  .image5{
+    position: relative;
+
+  }
+  .image6{
+    position: relative;
+  }
+  .image7{
+    position: relative;
+  }
+  .image8{
+    position: relative;
+  }
+  .image9{
+    position: relative;
+  }
+  .image10{
+    position: relative;
+  }
+  .image11{
+    position: relative;
+  }
+  .image12{
+    position: relative;
+  }
+  .image13{
+    position: relative;
+  }
+  .image14{
+    position: relative;
+  }
+  .image15{
+    position: relative;
+  }
+  .image16{
+    position: relative;
+  }
+  .image17{
+    position: relative;
+  }
+  .image18{
+    position: relative;
+  }
+  
+  /* div.gallery:hover {
+    border: 1px solid #777;
+  }
+   */
+  div.gallery img {
+    float: left;
+    width: 18%;
+    padding: 25px 70px 25px 70px;
+    
+
+
+
+    
+  }
+  /* h3{
+    display: inline-block;
+  } */
+
+  
+.desc1 {
+    font-size: 10px;
+    position: absolute;
+    left: 8%;
+    top: 170px;
+  }
+  .desc2 {
+    font-size: 10px;
+    position: absolute;
+    right: 42%;
+    top: 170px;
+  }
+
+  .desc3 {
+    font-size: 10px;
+    position: absolute;
+    right: 8%;
+    top: 170px;
+
+  }
+  .desc4 {
+    font-size: 10px;
+    position: absolute;
+    left: 8%;
+    top: 370px;
+  }
+  .desc5 {
+    font-size: 10px;
+    position: absolute;
+    right: 42%;
+    top: 370px;
+  }
+  .desc6 {
+    font-size: 10px;
+    position: absolute;
+    right: 8%;
+    top: 370px;
+  }
+  .desc7 {
+    font-size: 10px;
+    position: absolute;
+    left: 8%;
+    top: 570px;
+  }
+  .desc8 {
+    font-size: 10px;
+    position: absolute;
+    right: 42%;
+    top: 570px;
+  }
+  .desc9 {
+    font-size: 10px;
+    position: absolute;
+    right: 8%;
+    top: 570px;
+  }
+  .desc10 {
+    font-size: 10px;
+    position: absolute;
+    left: 8%;
+    top: 770px;
+    
+    
+  }
+  .desc11 {
+    font-size: 10px;
+    position: absolute;
+    right: 42%;
+    top: 770px;
+    
+    
+  }
+  .desc12 {
+    font-size: 10px;
+    position: absolute;
+    right: 8%;
+    top: 770px;
+    
+    
+  }
+  .desc13 {
+    font-size: 10px;
+    position: absolute;
+    left: 8%;
+    top: 970px;
+   
+  }
+  .desc14 {
+    font-size: 10px;
+    position: absolute;
+    right: 42%;
+    top: 970px;
+    
+  }
+  .desc15 {
+    font-size: 10px;
+    position: absolute;
+    right: 8%;
+    top: 970px;
+    
+  }
+  .desc16 {
+    font-size: 10px;
+    position: absolute;
+    left: 8%;
+    top: 1170px;
+   
+  }
+  .desc17 {
+    font-size: 10px;
+    position: absolute;
+    right: 42%;
+    top: 1170px;
+    
+  }
+  .desc18 {
+    font-size: 10px;
+    position: absolute;
+    right: 8%;
+    top: 1170px;
+ 
+  }
+
+
+/* 
+hr {
+    width: 60%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    /* margin: 30px 0 30px 28px; */
+    /* padding: 0;
+} */ 
+.hello1 {
+    font-size: 10px;
+    position: absolute;
+    left: 26%;
+    top: 15px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+  }
+  .hello2 {
+    font-size: 10px;
+    position: absolute;
+    right: 33%;
+    top: 15px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+  }
+
+  .hello3 {
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+  }
+  .hello4 {
+    font-size: 10px;
+    position: absolute;
+    left: 26%;
+    top: 215px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+  }
+  .hello5 {
+    font-size: 10px;
+    position: absolute;
+    right: 33%;
+    top: 215px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+  }
+  .hello6 {
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    top: 215px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+  }
+  .hello7 {
+    font-size: 10px;
+    position: absolute;
+    left: 26%;
+    top: 415px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+  }
+  .hello8 {
+    font-size: 10px;
+    position: absolute;
+    right: 33%;
+    top: 415px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+  }
+  .hello9 {
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    top: 415px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+  }
+  .hello10 {
+    font-size: 10px;
+    position: absolute;
+    left: 26%;
+    top: 615px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+    
+    
+  }
+  .hello11 {
+    font-size: 10px;
+    position: absolute;
+    right: 33%;
+    top: 615px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+    
+    
+  }
+  .hello12 {
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    top: 615px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+    
+  }
+  .hello13 {
+    font-size: 10px;
+    position: absolute;
+    left: 26%;
+    top: 815px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+  }
+  .hello14 {
+    font-size: 10px;
+    position: absolute;
+    right: 33%;
+    top: 815px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+  }
+  .hello15 {
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    top: 815px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+  }
+  .hello16 {
+    font-size: 10px;
+    position: absolute;
+    left: 26%;
+    top: 1015px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+  }
+  .hello17 {
+    font-size: 10px;
+    position: absolute;
+    right: 33%;
+    top: 1015px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+  }
+  .hello18 {
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    top: 1015px;
+    width: 70px;
+    border: 1px solid rgb(164, 189, 214);
+    border-left: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+  }
